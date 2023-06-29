@@ -24,16 +24,12 @@ const TopBar: React.FC = () => {
   };
 
   const handleOnClick=(action:string)=>{
-    console.log(action);
    if(action==='logout') 
    {
     setSessionToken('');
-    window.location.reload();
+    navigate('/')
     }
-    if(action==='profile')
-    {
-     navigate('/profile');   
-    }
+   
 
   };
   return (
@@ -49,7 +45,6 @@ const TopBar: React.FC = () => {
           onClose={handleMenuClose}
         >
           <MenuItem onClick={()=>handleOnClick('logout')}>Logout</MenuItem>
-          <MenuItem onClick={()=>handleOnClick('profile')}>Profile</MenuItem>
         </Menu>
       </Toolbar>
     </AppBar>
