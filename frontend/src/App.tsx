@@ -15,7 +15,7 @@ function App() {
   },[]);
 
   return (
-    <GoogleOAuthProvider clientId={'470650336153-g1r3sjsascofi8fkml4sb7deln38gj3f.apps.googleusercontent.com'}>
+    <GoogleOAuthProvider clientId={'CLIENT ID REMOVED'}>
     
      <Router>
       
